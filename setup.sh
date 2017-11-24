@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+# install Plug package manager
+if [ ! -f ~/.vim/autoload/plug.vim ]
+then
+  curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+fi
