@@ -1,11 +1,12 @@
 exec fish
 source ~/.bash_profile
-source "$HOME/.aliases.sh"
-export EDTOR=vim
 
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
+
+# aliases
+source "$HOME/.aliases.sh"
 
 # If not running interactively, don't do anything
 case $- in
