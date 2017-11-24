@@ -8,13 +8,11 @@
 # for ssh logins, install and configure the libpam-umask package.
 #umask 022
 
-# if running bash
-if [ -n "$BASH_VERSION" ]; then
-    # include .bashrc if it exists
-    if [ -f "$HOME/.bashrc" ]; then
-	. "$HOME/.bashrc"
-    fi
-fi
+export PATH="$HOME/.linuxbrew/bin:$PATH"
+export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
+export PATH="$HOME/.rbenv/shims:$PATH"
+export PGHOST=localhost
+export EDITOR=vim
 
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/bin" ] ; then
