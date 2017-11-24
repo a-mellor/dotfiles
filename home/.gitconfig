@@ -1,0 +1,7 @@
+[user]
+	email = alexander.mellor@gmail.com
+	name = alex
+[credential]
+	helper = cache --timeout=7200
+[core]
+	excludesfile = /home/alex/.gitignore_global
